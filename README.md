@@ -1,5 +1,5 @@
 #### Relative Time Parser Plugin for Moment.js
-This plugin converts a simple string to a manipulated moment object.  The string format is inspired by Graphite's formate for relative time.
+This plugin converts a simple string to a manipulated moment object.  The string format is inspired by Graphite's format for relative time.
 
 
 ##### Install - NPM
