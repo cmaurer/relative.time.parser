@@ -1,6 +1,6 @@
 {
   "name": "relative-time-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts relative time string into a moment.js time object",
   "main": "./src/relative.time.parser.js",
   "scripts": {

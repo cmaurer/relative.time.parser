@@ -16,8 +16,8 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today(\'yyyy-mm-dd\') %> */\n'
             },
             build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
+                src: 'src/relative.time.parser.js',
+                dest: 'build/relative.time.parser.min.js'
             }
         },
         mochaTest: {

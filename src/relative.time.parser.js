@@ -1,7 +1,7 @@
 /* global require, define, module */
 (function() {
 
-    var relativeTimeRe = /([-+])(\d*)(s|d|min|h|d|w|mon|y)/,
+    var relativeTimeRe = /([-+])(\d*)(s|d|min|h|d|w|mon|y|M|m|Q|ms)/,
     unitConverter = function(unit){
         /*
         s   Seconds
@@ -13,9 +13,13 @@
         y   365 Days (year)
         */
         switch(unit){
+            case 'ms':
+                return 'milliseconds';
             case 's':
                 return 'seconds';
             case 'min':
+                return 'minutes';
+            case 'm':
                 return 'minutes';
             case 'h':
                 return 'hours';
@@ -25,8 +29,12 @@
                 return 'weeks';
             case 'mon':
                 return 'months';
+            case 'M':
+                return 'months';
             case 'y':
                 return 'years';
+            case 'Q':
+                return 'quarters';
             default:
                 return null;
         }
@@ -35,20 +43,24 @@
 
     initialize = function(moment) {
         moment.fn.relativeTime = function (relativeTimeString) {
-            if (relativeTimeRe.test(relativeTimeString.trim())) {
-                var result = relativeTimeRe.exec(relativeTimeString),
-                    amount = result[2],
-                    unit = unitConverter(result[3]);
-                if (unit === null) {
+            if (relativeTimeString.trim() === 'now') {
+                return moment();
+            } else {
+                if (relativeTimeRe.test(relativeTimeString.trim())) {
+                    var result = relativeTimeRe.exec(relativeTimeString),
+                        amount = result[2],
+                        unit = unitConverter(result[3]);
+                    if (unit === null) {
+                        return null;
+                    }
+                    if (result[1] === '-') {
+                        return moment().subtract(+amount, unit);
+                    } else {
+                        return moment().add(+amount, unit);
+                    }
+                } else {
                     return null;
                 }
-                if (result[1] === '-') {
-                    return moment().subtract(+amount, unit);
-                } else {
-                    return moment().add(+amount, unit);
-                }
-            } else {
-                return null;
             }
         };
         return moment;
