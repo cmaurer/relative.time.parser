@@ -35,6 +35,33 @@ moment().relativeTime('-6s');
 ```JavaScript
 moment().relativeTime('+6s');
 ```
+### ```sec``` - seconds
+##### subtract seconds
+```JavaScript
+moment().relativeTime('-6sec');
+```
+##### add seconds
+```JavaScript
+moment().relativeTime('+6sec');
+```
+### ```second``` - seconds
+##### subtract seconds
+```JavaScript
+moment().relativeTime('-6second');
+```
+##### add seconds
+```JavaScript
+moment().relativeTime('+6second');
+```
+### ```seconds``` - seconds
+##### subtract seconds
+```JavaScript
+moment().relativeTime('-6seconds');
+```
+##### add seconds
+```JavaScript
+moment().relativeTime('+6seconds');
+```
 ### ```m``` - minutes
 ##### subtract minutes
 ```JavaScript
@@ -53,6 +80,24 @@ moment().relativeTime('-6min');
 ```JavaScript
 moment().relativeTime('+6min');
 ```
+### ```minute``` - minutes
+##### subtract minutes
+```JavaScript
+moment().relativeTime('-6minute');
+```
+##### add minutes
+```JavaScript
+moment().relativeTime('+6minute');
+```
+### ```minutes``` - minutes
+##### subtract minutes
+```JavaScript
+moment().relativeTime('-6minutes');
+```
+##### add minutes
+```JavaScript
+moment().relativeTime('+6minutes');
+```
 ### ```h``` - hours
 ##### subtract hours
 ```JavaScript
@@ -61,6 +106,24 @@ moment().relativeTime('-6h');
 ##### add hours
 ```JavaScript
 moment().relativeTime('+6h');
+```
+### ```hour``` - hours
+##### subtract hours
+```JavaScript
+moment().relativeTime('-6hour');
+```
+##### add hours
+```JavaScript
+moment().relativeTime('+6hour');
+```
+### ```hours``` - hours
+##### subtract hours
+```JavaScript
+moment().relativeTime('-6hours');
+```
+##### add hours
+```JavaScript
+moment().relativeTime('+6hours');
 ```
 ### ```d``` - days
 ##### subtract days
@@ -71,6 +134,15 @@ moment().relativeTime('-6d');
 ```JavaScript
 moment().relativeTime('+6d');
 ```
+### ```day``` - days
+##### subtract days
+```JavaScript
+moment().relativeTime('-6day');
+```
+##### add days
+```JavaScript
+moment().relativeTime('+6day');
+```
 ### ```w``` - weeks
 ##### subtract weeks
 ```JavaScript
@@ -80,6 +152,25 @@ moment().relativeTime('-6w');
 ```JavaScript
 moment().relativeTime('+6w');
 ```
+### ```week``` - weeks
+##### subtract weeks
+```JavaScript
+moment().relativeTime('-6week');
+```
+##### add weeks
+```JavaScript
+moment().relativeTime('+6week');
+```
+
+### ```weeks``` - weeks
+##### subtract weeks
+```JavaScript
+moment().relativeTime('-6weeks');
+```
+##### add weeks
+```JavaScript
+moment().relativeTime('+6weeks');
+```
 ### ```mon``` - months
 ##### subtract months
 ```JavaScript
@@ -88,6 +179,24 @@ moment().relativeTime('-6mon');
 ##### add months
 ```JavaScript
 moment().relativeTime('+6mon');
+```
+### ```month``` - months
+##### subtract months
+```JavaScript
+moment().relativeTime('-6month');
+```
+##### add months
+```JavaScript
+moment().relativeTime('+6month');
+```
+### ```months``` - months
+##### subtract months
+```JavaScript
+moment().relativeTime('-6months');
+```
+##### add months
+```JavaScript
+moment().relativeTime('+6months');
 ```
 ### ```M``` - months
 ##### subtract months
@@ -107,6 +216,24 @@ moment().relativeTime('-6Q');
 ```JavaScript
 moment().relativeTime('+6Q');
 ```
+### ```Quarter``` - quarters
+##### subtract quarters
+```JavaScript
+moment().relativeTime('-6Quarter');
+```
+##### add quarters
+```JavaScript
+moment().relativeTime('+6Quarter');
+```
+### ```Quarters``` - quarters
+##### subtract quarters
+```JavaScript
+moment().relativeTime('-6Quarters');
+```
+##### add quarters
+```JavaScript
+moment().relativeTime('+6Quarters');
+```
 ### ```y``` - years
 ##### subtract years
 ```JavaScript
@@ -116,6 +243,25 @@ moment().relativeTime('-6y');
 ```JavaScript
 moment().relativeTime('+6y');
 ```
+### ```year``` - years
+##### subtract years
+```JavaScript
+moment().relativeTime('-6year');
+```
+##### add years
+```JavaScript
+moment().relativeTime('+6year');
+```
+### ```years``` - years
+##### subtract years
+```JavaScript
+moment().relativeTime('-6years');
+```
+##### add years
+```JavaScript
+moment().relativeTime('+6years');
+```
+
 ### ```now``` - now
 ##### subtract minutes
 ```JavaScript
