@@ -272,6 +272,23 @@ moment().relativeTime('now');
 moment().relativeTime('now');
 ```
 
+
+## Is Relative Time String Format
+
+### Tests a String to determine if it is in the RelativeTimeFormat
+
+```JavaScript
+moment().isRelativeTimeFormat('-2y'); // should === true 
+```
+
+```JavaScript
+moment().isRelativeTimeFormat('xxx'); // should === false 
+```
+
+
+
+
+
 ## Resources
 
 [Graphite URL Api Reference](http://graphite.readthedocs.org/en/latest/render_api.html)
