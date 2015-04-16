@@ -90,6 +90,9 @@
                 }
             }
         };
+        moment.fn.isRelativeTimeFormat = function(relativeTimeString){
+          return relativeTimeRe.test(relativeTimeString);
+        };
         return moment;
     };
 

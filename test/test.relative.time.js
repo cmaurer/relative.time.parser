@@ -266,4 +266,18 @@ describe('Parse Relative Time', function(){
 
     });
 
+    describe('Is RelativeTimeString Tests', function(){
+
+        it('should return true for a valid relative time string format', function(done){
+            should(moment().isRelativeTimeFormat('-2y')).eql(true);
+            done();
+        });
+
+        it('should return false for an invalid relative time string format', function(done){
+            should(moment().isRelativeTimeFormat('xxx')).eql(false);
+            done();
+        });
+
+    });
+
 });
