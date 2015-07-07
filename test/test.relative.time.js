@@ -71,22 +71,22 @@ describe('Parse Relative Time', function(){
         });
 
         it('should subtract months to the time: -2mon', function(done){
-            should(moment().subtract(2, 'months').months()).eql(momentTimeParser().relativeTime('-2mon').months());
+            should(moment().subtract(2, 'months').month()).eql(momentTimeParser().relativeTime('-2mon').month());
             done();
         });
 
         it('should subtract months to the time: -2month', function(done){
-            should(moment().subtract(2, 'months').months()).eql(momentTimeParser().relativeTime('-2month').months());
+            should(moment().subtract(2, 'months').month()).eql(momentTimeParser().relativeTime('-2month').month());
             done();
         });
 
         it('should subtract months to the time: -2months', function(done){
-            should(moment().subtract(2, 'months').months()).eql(momentTimeParser().relativeTime('-2months').months());
+            should(moment().subtract(2, 'months').month()).eql(momentTimeParser().relativeTime('-2months').month());
             done();
         });
 
         it('should subtract months to the time: -2M', function(done){
-            should(moment().subtract(2, 'months').months()).eql(momentTimeParser().relativeTime('-2M').months());
+            should(moment().subtract(2, 'months').month()).eql(momentTimeParser().relativeTime('-2M').month());
             done();
         });
 
@@ -191,22 +191,22 @@ describe('Parse Relative Time', function(){
         });
 
         it('should add months to the time: +3mon', function(done){
-            should(moment().add(3, 'months').months()).eql(momentTimeParser().relativeTime('+3mon').months());
+            should(moment().add(3, 'months').month()).eql(momentTimeParser().relativeTime('+3mon').month());
             done();
         });
 
         it('should add months to the time: +3month', function(done){
-            should(moment().add(3, 'months').months()).eql(momentTimeParser().relativeTime('+3month').months());
+            should(moment().add(3, 'months').month()).eql(momentTimeParser().relativeTime('+3month').month());
             done();
         });
 
         it('should add months to the time: +3months', function(done){
-            should(moment().add(3, 'months').months()).eql(momentTimeParser().relativeTime('+3months').months());
+            should(moment().add(3, 'months').month()).eql(momentTimeParser().relativeTime('+3months').month());
             done();
         });
 
         it('should add months to the time: +3M', function(done){
-            should(moment().add(3, 'months').months()).eql(momentTimeParser().relativeTime('+3M').months());
+            should(moment().add(3, 'months').month()).eql(momentTimeParser().relativeTime('+3M').month());
             done();
         });
 
