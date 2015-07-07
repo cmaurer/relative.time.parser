@@ -1,6 +1,15 @@
 # Relative Time Parser Plugin for [Moment.js](http://momentjs.com/)
 This plugin converts a simple string to a manipulated moment object.  The string format is inspired by Graphite's [relative time](http://graphite.readthedocs.org/en/latest/render_api.html#from-until) format.
 
+# Badges
+[![NPM](https://nodei.co/npm/relative-time-parser.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/relative-time-parser/)
+[![NPM](https://nodei.co/npm-dl/relative-time-parser.png)](https://nodei.co/npm/relative-time-parser/)
+
+[![Build Status](https://travis-ci.org/cmaurer/relative.time.parser.svg)](https://travis-ci.org/cmaurer/relative.time.parser)
+
+[![Dependency Status](https://david-dm.org/cmaurer/relative.time.parser.svg)](https://david-dm.org/cmaurer/relative.time.parser)
+[![devDependency Status](https://david-dm.org/cmaurer/relative.time.parser/dev-status.svg)](https://david-dm.org/cmaurer/relative.time.parser#info=devDependencies)
+
 ## Install - NPM
 
 ```
