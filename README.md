@@ -272,15 +272,9 @@ moment().relativeTime('+6years');
 ```
 
 ### ```now``` - now
-##### subtract minutes
 ```JavaScript
 moment().relativeTime('now');
 ```
-##### add minutes
-```JavaScript
-moment().relativeTime('now');
-```
-
 
 ## Is Relative Time String Format
 
@@ -294,8 +288,9 @@ moment().isRelativeTimeFormat('-2y'); // should === true
 moment().isRelativeTimeFormat('xxx'); // should === false 
 ```
 
-
-
+```JavaScript
+moment().isRelativeTimeFormat('now'); // should === true 
+```
 
 
 ## Resources

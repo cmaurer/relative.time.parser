@@ -91,7 +91,10 @@
             }
         };
         moment.fn.isRelativeTimeFormat = function(relativeTimeString){
-          return relativeTimeRe.test(relativeTimeString);
+            if (relativeTimeString.trim() === 'now') {
+                return true;
+            }
+            return relativeTimeRe.test(relativeTimeString);
         };
         return moment;
     };

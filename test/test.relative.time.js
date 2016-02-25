@@ -260,7 +260,30 @@ describe('Parse Relative Time', function(){
     describe('now Tests', function(){
 
         it('should return a non manipulated moment object when now is used', function(done){
+            should(moment().day()).eql(momentTimeParser().relativeTime('now').day());
             should(moment().hours()).eql(momentTimeParser().relativeTime('now').hours());
+            should(moment().minutes()).eql(momentTimeParser().relativeTime('now').minutes());
+            done();
+        });
+
+        it('should return a non manipulated moment object when now is used that has additional spaces after', function(done){
+            should(moment().day()).eql(momentTimeParser().relativeTime('now ').day());
+            should(moment().hours()).eql(momentTimeParser().relativeTime('now ').hours());
+            should(moment().minutes()).eql(momentTimeParser().relativeTime('now ').minutes());
+            done();
+        });
+
+        it('should return a non manipulated moment object when now is used that has additional spaces before', function(done){
+            should(moment().day()).eql(momentTimeParser().relativeTime(' now').day());
+            should(moment().hours()).eql(momentTimeParser().relativeTime(' now').hours());
+            should(moment().minutes()).eql(momentTimeParser().relativeTime(' now').minutes());
+            done();
+        });
+
+        it('should return a non manipulated moment object when now is used that has additional spaces before and after', function(done){
+            should(moment().day()).eql(momentTimeParser().relativeTime(' now ').day());
+            should(moment().hours()).eql(momentTimeParser().relativeTime(' now ').hours());
+            should(moment().minutes()).eql(momentTimeParser().relativeTime(' now ').minutes());
             done();
         });
 
@@ -277,6 +300,12 @@ describe('Parse Relative Time', function(){
             should(moment().isRelativeTimeFormat('xxx')).eql(false);
             done();
         });
+
+        it('should return true for "now" relative time', function(done){
+            should(moment().isRelativeTimeFormat('now')).eql(true);
+            done();
+        });
+
 
     });
 
