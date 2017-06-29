@@ -1,6 +1,6 @@
 {
   "name": "relative-time-parser",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A moment.js plugin to convert relative time string into a moment.js object",
   "main": "./src/relative.time.parser.js",
   "scripts": {
@@ -28,15 +28,15 @@
   "author": "Christian Maurer <chris_p_maurer@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "moment": "~2.11.2"
+    "moment": "~2.18.1"
   },
   "devDependencies": {
-    "assert": "^1.3.0",
-    "grunt-contrib-jshint": "^1.0.0",
+    "assert": "^1.4.1",
+    "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-uglify": "^0.11.1",
     "grunt-mocha-test": "^0.12.7",
-    "mocha": "^2.4.5",
-    "should": "^8.2.2",
+    "mocha": "^2.5.3",
+    "should": "^8.4.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13"
   }
