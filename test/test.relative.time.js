@@ -257,6 +257,17 @@ describe('Parse Relative Time', function(){
 
     });
 
+    describe('Spacing Tests', function(){
+        it('should tolerate a space between the amount and the units', function(done){
+            should(moment().add(2, 'year').year()).eql(momentTimeParser().relativeTime('+2 years').year());
+            done();
+        });
+        it('should fail if there is a space in the amount', function(done){
+            should().fail(momentTimeParser().relativeTime('+2 0years').year());
+            done();
+        });
+   });
+
     describe('now Tests', function(){
 
         it('should return a non manipulated moment object when now is used', function(done){
