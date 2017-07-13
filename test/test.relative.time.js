@@ -263,7 +263,7 @@ describe('Parse Relative Time', function(){
             done();
         });
         it('should fail if there is a space in the amount', function(done){
-            should().fail(momentTimeParser().relativeTime('+2 0years').year());
+            should(moment().isRelativeTimeFormat('+1 0 years')).eql(false);
             done();
         });
    });
