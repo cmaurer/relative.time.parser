@@ -1,7 +1,7 @@
 /* global require, define, module */
 (function() {
 
-    var relativeTimeRe = /([-+])(\d*)(minutes|minute|min|hours|hour|days|day|weeks|week|months|month|mon|years|year|Quarters|Quarter|seconds|second|sec|s|m|h|d|M|y|Y|Q|ms|w)/,
+    var relativeTimeRe = /([-+])(\d*)\s*(minutes|minute|min|hours|hour|days|day|weeks|week|months|month|mon|years|year|Quarters|Quarter|seconds|second|sec|s|m|h|d|M|y|Y|Q|ms|w)/,
     unitConverter = function(unit){
         switch(unit){
             case 'ms':
