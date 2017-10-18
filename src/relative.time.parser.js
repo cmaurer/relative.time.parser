@@ -81,9 +81,9 @@
                         return null;
                     }
                     if (result[1] === '-') {
-                        return moment().subtract(+amount, unit);
+                        return moment(this).subtract(+amount, unit);
                     } else {
-                        return moment().add(+amount, unit);
+                        return moment(this).add(+amount, unit);
                     }
                 } else {
                     return null;

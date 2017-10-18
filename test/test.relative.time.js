@@ -266,7 +266,21 @@ describe('Parse Relative Time', function(){
             should(moment().isRelativeTimeFormat('+1 0 years')).eql(false);
             done();
         });
-   });
+    });
+
+    describe('Arbitrary Value Tests', function (){
+
+        it ('should add to the object\'s value', function (done){
+            should(moment('2017-01-01').add(3, 'year')).eql(moment('2017-01-01').relativeTime('+3y'));
+            done();
+        });
+
+        it ('should subtract from the object\'s value', function (done){
+            should(moment('2017-01-01').subtract(3, 'year')).eql(moment('2017-01-01').relativeTime('-3y'));
+            done();
+        });
+
+    });
 
     describe('now Tests', function(){
 
