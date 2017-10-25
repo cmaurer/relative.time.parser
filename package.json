@@ -28,15 +28,15 @@
   "author": "Christian Maurer <chris_p_maurer@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "moment": "~2.18.1"
+    "moment": "~2.19.1"
   },
   "devDependencies": {
     "assert": "~1.4.1",
     "grunt-contrib-jshint": "~1.1.0",
-    "grunt-contrib-uglify": "~3.0.1",
+    "grunt-contrib-uglify": "~3.1.0",
     "grunt-mocha-test": "~0.13.2",
-    "mocha": "~3.4.2",
-    "should": "~11.2.1",
+    "mocha": "~4.0.1",
+    "should": "~13.1.2",
     "grunt": "~1.0.1",
     "grunt-cli": "~1.2.0"
   }
