@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 node_js:
   - "node"
-  - "0.12"
+  - "lts/*"
 install:
   - npm install
   - npm install -g grunt-cli
