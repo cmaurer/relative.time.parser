@@ -1,10 +1,21 @@
+env:
+  global:
+    - CC_TEST_REPORTER_ID=a7bc1ef397115120c4c23d9361ae64475cd8797469cd6c2bcea7c57d70ca5e22
 sudo: false
 language: node_js
 node_js:
   - "node"
-  - "0.12"
+  - "lts/*"
 install:
   - npm install
   - npm install -g grunt-cli
 script:
   - grunt
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - bundle exec rspec
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
