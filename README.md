@@ -10,6 +10,7 @@ This plugin converts a simple string to a manipulated moment object.  The string
 [![Dependency Status](https://david-dm.org/cmaurer/relative.time.parser.svg)](https://david-dm.org/cmaurer/relative.time.parser)
 [![devDependency Status](https://david-dm.org/cmaurer/relative.time.parser/dev-status.svg)](https://david-dm.org/cmaurer/relative.time.parser#info=devDependencies)
 [![Maintainability](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/maintainability)](https://codeclimate.com/github/cmaurer/relative.time.parser/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/test_coverage)](https://codeclimate.com/github/cmaurer/relative.time.parser/test_coverage)
 ## Install - NPM
 
 ```
