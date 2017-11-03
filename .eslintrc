@@ -1,0 +1,14 @@
+{
+  "env": {
+      "browser": true,
+      "node": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "complexity": ["warn", 11],
+    "max-nested-callbacks": ["error", 3],
+    "block-scoped-var": "error",
+    "no-implicit-globals": "error",
+    "vars-on-top": "error"
+  }
+}
