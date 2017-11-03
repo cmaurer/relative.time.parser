@@ -33,3 +33,5 @@ node_modules
 
 # Build
 build
+
+.nyc_output*

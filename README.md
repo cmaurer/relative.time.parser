@@ -10,6 +10,8 @@ This plugin converts a simple string to a manipulated moment object.  The string
 [![Dependency Status](https://david-dm.org/cmaurer/relative.time.parser.svg)](https://david-dm.org/cmaurer/relative.time.parser)
 [![devDependency Status](https://david-dm.org/cmaurer/relative.time.parser/dev-status.svg)](https://david-dm.org/cmaurer/relative.time.parser#info=devDependencies)
 [![Maintainability](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/maintainability)](https://codeclimate.com/github/cmaurer/relative.time.parser/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/test_coverage)](https://codeclimate.com/github/cmaurer/relative.time.parser/test_coverage)
+
 ## Install - NPM
 
 ```
@@ -281,19 +283,18 @@ moment().relativeTime('now');
 ### Tests a String to determine if it is in the RelativeTimeFormat
 
 ```JavaScript
-moment().isRelativeTimeFormat('-2y'); // should === true 
+moment().isRelativeTimeFormat('-2y'); // should === true
 ```
 
 ```JavaScript
-moment().isRelativeTimeFormat('xxx'); // should === false 
+moment().isRelativeTimeFormat('xxx'); // should === false
 ```
 
 ```JavaScript
-moment().isRelativeTimeFormat('now'); // should === true 
+moment().isRelativeTimeFormat('now'); // should === true
 ```
 
 
 ## Resources
 
 [Graphite URL Api Reference](http://graphite.readthedocs.org/en/latest/render_api.html)
-
