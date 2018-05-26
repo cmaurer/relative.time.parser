@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for npm_audit in "$(npm audit | grep Run | cut -f 3-8  -d ' ')";
+do
+  echo "$npm_audit"
+  $npm_audit
+done
