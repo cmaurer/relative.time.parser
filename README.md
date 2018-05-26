@@ -2,17 +2,13 @@
 This plugin converts a simple string to a manipulated moment object.  The string format is inspired by Graphite's [relative time](http://graphite.readthedocs.org/en/latest/render_api.html#from-until) format.
 
 # Badges
-[![NPM](https://nodei.co/npm/relative-time-parser.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/relative-time-parser/)
-[![NPM](https://nodei.co/npm-dl/relative-time-parser.png)](https://nodei.co/npm/relative-time-parser/)
-
+[![NPM](https://nodei.co/npm/relative-time-parser.png?compact=true)](https://nodei.co/npm/relative-time-parser/)
 [![Build Status](https://travis-ci.org/cmaurer/relative.time.parser.svg)](https://travis-ci.org/cmaurer/relative.time.parser)
-
 [![Dependency Status](https://david-dm.org/cmaurer/relative.time.parser.svg)](https://david-dm.org/cmaurer/relative.time.parser)
 [![devDependency Status](https://david-dm.org/cmaurer/relative.time.parser/dev-status.svg)](https://david-dm.org/cmaurer/relative.time.parser#info=devDependencies)
 [![Maintainability](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/maintainability)](https://codeclimate.com/github/cmaurer/relative.time.parser/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/test_coverage)](https://codeclimate.com/github/cmaurer/relative.time.parser/test_coverage)
-[![Known Vulnerabilities](https://snyk.io/test/github/cmaurer/relative.time.parser:package.json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cmaurer/relative.time.parser:package.json?targetFile=package.json)
-
+[![Known Vulnerabilities](https://snyk.io/test/github/cmaurer/relative.time.parser/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cmaurer/relative.time.parser?targetFile=package.json)
 [![jsdelivr](https://data.jsdelivr.com/v1/package/npm/relative-time-parser/badge)](https://www.jsdelivr.com/package/npm/relative-time-parser)
 
 ## Install - NPM
