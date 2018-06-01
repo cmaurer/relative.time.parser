@@ -10,7 +10,6 @@ This plugin converts a simple string to a manipulated moment object.  The string
 [![Maintainability](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/maintainability)](https://codeclimate.com/github/cmaurer/relative.time.parser/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/test_coverage)](https://codeclimate.com/github/cmaurer/relative.time.parser/test_coverage)
 [![Known Vulnerabilities](https://snyk.io/test/github/cmaurer/relative.time.parser/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cmaurer/relative.time.parser?targetFile=package.json)
-[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/relative-time-parser/badge)](https://www.jsdelivr.com/package/npm/relative-time-parser)
 
 ## Install - NPM
 
