@@ -1,5 +1,4 @@
 /*jshint maxstatements: 1000 */
-/* global module, process */
 'use strict';
 
 module.exports = function(grunt) {

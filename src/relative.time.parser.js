@@ -1,4 +1,4 @@
-/* global window, require, define, module */
+/* global define */
 /* eslint-env node, mocha */
 (function() {
 
