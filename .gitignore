@@ -35,3 +35,8 @@ node_modules
 build
 
 .nyc_output*
+
+.sonarlint
+
+# Visual Studio Code
+.vscode
