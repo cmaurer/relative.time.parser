@@ -20,7 +20,6 @@ jobs:
       - run: npm test
         env:
           CI: true
-
   publish:
     if: github.ref == 'refs/heads/master'
     needs: build
