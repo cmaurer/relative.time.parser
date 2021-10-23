@@ -30,10 +30,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-          registry-url: "https://registry.npmjs.com"
+          registry-url: "https://registry.npmjs.org/"
       - name: Publish
         run: |
-          npm config set //registry.npmjs.com/:_authToken ${NPM_TOKEN}
+          npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           npm publish --ignore-scripts
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
