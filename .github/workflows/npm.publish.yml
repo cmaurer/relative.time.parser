@@ -7,17 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v2
         with:
-          node-version: "12.x"
-          registry-url: "https://registry.npmjs.com"
+          node-version: "14.x"
+          registry-url: "https://registry.npmjs.org/"
       - run: npm install
-        run: |
-          npm config set registry https://registry.npmjs.com
-          npm config set registry.npmjs.com/:_authToken=${NPM_TOKEN}
-          cat /home/runner/work/_temp/.npmrc
-          npm publish --ignore-scripts
+      - run: npm publish --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
