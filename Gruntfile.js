@@ -36,8 +36,7 @@ module.exports = function(grunt) {
       test: {
         options: {
           reporter: 'spec',
-          quiet: false,
-          require: 'blanket/blanket'
+          quiet: false
         },
         src: ['test/*.js']
       }
