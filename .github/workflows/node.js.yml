@@ -26,12 +26,24 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Build
         run: npm run build --if-present
-      - name: Run tests
-        run: npm test
+      - name: Run tests with coverage
+        run: npm run coverage
         env:
           CI: true
       - name: Coveralls
         uses: coverallsapp/github-action@v2
+        with:
+          flag-name: node-${{ matrix.node-version }}
+          parallel: true
+
+  coveralls-finish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v2
+        with:
+          parallel-finished: true
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
