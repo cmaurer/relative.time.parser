@@ -19,8 +19,7 @@ module.exports = function(grunt) {
     },
     eslint: {
       options: {
-        configFile: '.eslintrc',
-        format: 'codeframe'
+        overrideConfigFile: '.eslintrc'
       },
       target: ['src/relative.time.parser.js']
     },

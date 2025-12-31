@@ -21,6 +21,11 @@ describe('Parse Relative Time', function() {
 
   describe('Subtract Tests', function() {
 
+    it('should subtract milliseconds from the time: -500ms', function(done) {
+      should(moment('2017-01-01 00:00:00.000').subtract(500, 'milliseconds')).eql(moment('2017-01-01 00:00:00.000').relativeTime('-500ms'));
+      done();
+    });
+
     it('should subtract minutes to the time: -7m', function(done) {
       should(moment().subtract(7, 'minutes').minutes()).eql(momentTimeParser().relativeTime('-7m').minutes());
       done();
@@ -196,6 +201,11 @@ describe('Parse Relative Time', function() {
   });
 
   describe('Add Tests', function() {
+
+    it('should add milliseconds to the time: +500ms', function(done) {
+      should(moment('2017-01-01 00:00:00.000').add(500, 'milliseconds')).eql(moment('2017-01-01 00:00:00.000').relativeTime('+500ms'));
+      done();
+    });
 
     it('should add minutes to the time: +7m', function(done) {
       should(moment().add(7, 'minutes').minutes()).eql(momentTimeParser().relativeTime('+7m').minutes());
@@ -448,6 +458,16 @@ describe('Parse Relative Time', function() {
 
     it('should return true for a valid relative time string format', function(done) {
       should(moment().isRelativeTimeFormat('-2y')).eql(true);
+      done();
+    });
+
+    it('should return true for milliseconds format: -500ms', function(done) {
+      should(moment().isRelativeTimeFormat('-500ms')).eql(true);
+      done();
+    });
+
+    it('should return true for milliseconds format: +100ms', function(done) {
+      should(moment().isRelativeTimeFormat('+100ms')).eql(true);
       done();
     });
 
