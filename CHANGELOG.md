@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/cmaurer/relative.time.parser/compare/v1.1.4...v1.1.5) (2025-12-31)
+
+
+### Bug Fixes
+
+* adding semantic release job back ([3d94ba7](https://github.com/cmaurer/relative.time.parser/commit/3d94ba73c40395e0affe8cb6721af2dd6ca61627))
+
 ## [1.1.4](https://github.com/cmaurer/relative.time.parser/compare/v1.1.3...v1.1.4) (2025-12-31)
 
 
