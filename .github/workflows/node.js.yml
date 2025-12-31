@@ -30,6 +30,8 @@ jobs:
         run: npm test
         env:
           CI: true
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
