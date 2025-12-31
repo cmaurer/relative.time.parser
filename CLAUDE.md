@@ -90,3 +90,9 @@ Supports AMD (define), CommonJS (module.exports), and browser globals.
 
 - **Runtime**: moment.js (peer dependency)
 - **Dev**: grunt, mocha, nyc, eslint, jshint
+
+## Publishing to npm
+1. Bump version in package.json
+2. Commit and push to master
+3. Create and push a tag: git tag v1.2.0 && git push origin v1.2.0
+4. The publish job will automatically run
