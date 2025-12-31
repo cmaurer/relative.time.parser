@@ -2,12 +2,16 @@
 /* eslint-env node, mocha */
 (function() {
 
-  var relativeTimeRe = /([-+])(\d*)\s*(minutes|minute|min|Min|Minute|Minutes|hr|Hr|hours|hour|Hour|Hours|days|day|Days|Day|weeks|week|Week|Weeks|months|month|mon|Month|Months|years|year|Year|Years|Quarters|Quarter|seconds|second|Seconds|Second|sec|s|m|h|d|D|M|y|Y|q|Q|Qr|qr|ms|w|wk|Wk)/,
+  var relativeTimeRe = /([-+])(\d*)\s*(milliseconds|millisecond|Milliseconds|Millisecond|ms|minutes|minute|min|Min|Minute|Minutes|seconds|second|Seconds|Second|sec|hours|hour|Hours|Hour|hr|Hr|days|day|Days|Day|weeks|week|Weeks|Week|wk|Wk|months|month|Months|Month|mon|years|year|Years|Year|yrs|yr|Yr|Quarters|Quarter|quarters|quarter|qtr|Qr|qr|s|m|h|d|D|w|W|M|y|Y|q|Q)/,
     initialize,
     convertCase;
 
   convertCase = ({
     'ms': 'milliseconds',
+    'millisecond': 'milliseconds',
+    'milliseconds': 'milliseconds',
+    'Millisecond': 'milliseconds',
+    'Milliseconds': 'milliseconds',
     's': 'seconds',
     'sec': 'seconds',
     'second': 'seconds',
@@ -51,6 +55,7 @@
     'y': 'years',
     'Y': 'years',
     'yr': 'years',
+    'Yr': 'years',
     'yrs': 'years',
     'year': 'years',
     'years': 'years',
