@@ -73,22 +73,19 @@
   });
 
   initialize = function(moment) {
-
     moment.fn.relativeTime = function(relativeTimeString) {
-      var result;
       relativeTimeString = relativeTimeString.trim();
       if (relativeTimeString === 'now') {
         return moment(this);
       }
       if (relativeTimeRe.test(relativeTimeString)) {
-          result = relativeTimeRe.exec(relativeTimeString);
+          var result = relativeTimeRe.exec(relativeTimeString);
           if (relativeTimeString.charAt(0) === '-') {
             return moment(this).subtract(+result[2], convertCase[result[3]]);
           }
           return moment(this).add(+result[2], convertCase[result[3]]);
-      } else {
-        return moment();
       }
+      return moment(this);
     };
 
     moment.fn.isRelativeTimeFormat = function(relativeTimeString) {

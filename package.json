@@ -6,7 +6,8 @@
   "scripts": {
     "test": "grunt test",
     "coverage": "nyc --reporter lcov --reporter text npm test",
-    "lint": "eslint ./src/relative.time.parser.js"
+    "lint": "eslint ./src/relative.time.parser.js",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "moment",
@@ -33,8 +34,9 @@
     "moment": "^2.30.1"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "assert": "^2.1.0",
-    "blanket": "^1.2.3",
     "grunt": "^1.6.1",
     "grunt-cli": "^1.5.0",
     "grunt-contrib-clean": "^2.0.1",
@@ -46,6 +48,7 @@
     "mocha": "^11.7.5",
     "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^17.1.0",
+    "semantic-release": "^24.2.3",
     "should": "^13.2.3"
   },
   "nyc": {

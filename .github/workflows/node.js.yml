@@ -1,12 +1,16 @@
 name: Node.js CI
 
 permissions:
-  contents: read
+  contents: write
+  issues: write
   pull-requests: write
+  id-token: write
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+      - 'feature/*'
   pull_request:
     branches: [master]
 
@@ -49,14 +53,17 @@ jobs:
         with:
           parallel-finished: true
 
-  publish:
-    if: startsWith(github.ref, 'refs/tags/v')
+  release:
     needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -64,8 +71,9 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           cache: 'npm'
       - name: Install dependencies
-        run: npm install
-      - name: Publish to npm
-        run: npm publish
+        run: npm ci --ignore-scripts
+      - name: Run semantic-release
+        run: npx semantic-release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
