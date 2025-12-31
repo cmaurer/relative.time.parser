@@ -28,6 +28,12 @@
       }
     ],
     [
+      "@semantic-release/npm",
+      {
+        "npmPublish": true
+      }
+    ],    
+    [
       "@semantic-release/git",
       {
         "assets": [
