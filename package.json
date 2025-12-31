@@ -5,6 +5,7 @@
   "main": "./src/relative.time.parser.js",
   "private": false,
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public",
     "provenance": true
   },
