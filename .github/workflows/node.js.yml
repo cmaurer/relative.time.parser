@@ -80,3 +80,5 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
       - name: Npm Publish
         run: npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
