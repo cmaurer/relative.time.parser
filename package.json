@@ -3,6 +3,11 @@
   "version": "1.1.1",
   "description": "A moment.js plugin to convert relative time string into a moment.js object",
   "main": "./src/relative.time.parser.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "test": "grunt test",
     "coverage": "nyc --reporter lcov --reporter text npm test",
