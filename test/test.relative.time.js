@@ -19,6 +19,15 @@ describe('Parse Relative Time', function() {
 
   });
 
+  describe('Default tests', function() {
+    it('should return a default moment() when the regex is not valid', function(done) {
+      var newMoment = moment().relativeTime('not-valid');
+      should(newMoment).not.eql(undefined);
+      newMoment.isValid().should.be.True;
+      done();
+    })
+  })
+
   describe('Subtract Tests', function() {
 
     it('should subtract milliseconds from the time: -500ms', function(done) {
