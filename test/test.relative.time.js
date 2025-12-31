@@ -22,7 +22,7 @@ describe('Parse Relative Time', function() {
   describe('Subtract Tests', function() {
 
     it('should subtract milliseconds from the time: -500ms', function(done) {
-      should(moment().subtract(500, 'milliseconds').milliseconds()).eql(momentTimeParser().relativeTime('-500ms').milliseconds());
+      should(moment('2017-01-01 00:00:00.000').subtract(500, 'milliseconds')).eql(moment('2017-01-01 00:00:00.000').relativeTime('-500ms'));
       done();
     });
 
@@ -203,7 +203,7 @@ describe('Parse Relative Time', function() {
   describe('Add Tests', function() {
 
     it('should add milliseconds to the time: +500ms', function(done) {
-      should(moment().add(500, 'milliseconds').milliseconds()).eql(momentTimeParser().relativeTime('+500ms').milliseconds());
+      should(moment('2017-01-01 00:00:00.000').add(500, 'milliseconds')).eql(moment('2017-01-01 00:00:00.000').relativeTime('+500ms'));
       done();
     });
 
