@@ -424,6 +424,11 @@ describe('Parse Relative Time', function() {
 
   describe('now Tests', function() {
 
+    it('should preserve the moment context when now is used on a specific date', function(done) {
+      should(moment('2017-01-01 12:30:45')).eql(moment('2017-01-01 12:30:45').relativeTime('now'));
+      done();
+    });
+
     it('should return a non manipulated moment object when now is used', function(done) {
       should(moment().day()).eql(momentTimeParser().relativeTime('now').day());
       should(moment().hours()).eql(momentTimeParser().relativeTime('now').hours());
