@@ -77,6 +77,9 @@
     moment.fn.relativeTime = function(relativeTimeString) {
       var result;
       relativeTimeString = relativeTimeString.trim();
+      if (relativeTimeString === 'now') {
+        return moment(this);
+      }
       if (relativeTimeRe.test(relativeTimeString)) {
           result = relativeTimeRe.exec(relativeTimeString);
           if (relativeTimeString.charAt(0) === '-') {

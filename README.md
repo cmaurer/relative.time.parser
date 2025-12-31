@@ -5,6 +5,7 @@ This plugin converts a simple string to a manipulated moment object.  The string
 [![NPM](https://img.shields.io/npm/v/relative-time-parser.svg)](https://nodei.co/npm/relative-time-parser/)
 [![npm downloads](https://img.shields.io/npm/dm/relative-time-parser.svg?style=flat-square)](http://npm-stat.com/charts.html?package=relative-time-parser)
 [![Known Vulnerabilities](https://snyk.io/test/github/cmaurer/relative.time.parser/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cmaurer/relative.time.parser?targetFile=package.json)
+[![Coverage Status](https://coveralls.io/repos/github/cmaurer/relative.time.parser/badge.svg?branch=master)](https://coveralls.io/github/cmaurer/relative.time.parser?branch=master)
 
 ## Install - NPM
 
