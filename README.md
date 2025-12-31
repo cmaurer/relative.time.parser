@@ -4,11 +4,6 @@ This plugin converts a simple string to a manipulated moment object.  The string
 # Badges
 [![NPM](https://img.shields.io/npm/v/relative-time-parser.svg)](https://nodei.co/npm/relative-time-parser/)
 [![npm downloads](https://img.shields.io/npm/dm/relative-time-parser.svg?style=flat-square)](http://npm-stat.com/charts.html?package=relative-time-parser)
-[![Build Status](https://travis-ci.org/cmaurer/relative.time.parser.svg)](https://travis-ci.org/cmaurer/relative.time.parser)
-[![Dependency Status](https://david-dm.org/cmaurer/relative.time.parser.svg)](https://david-dm.org/cmaurer/relative.time.parser)
-[![devDependency Status](https://david-dm.org/cmaurer/relative.time.parser/dev-status.svg)](https://david-dm.org/cmaurer/relative.time.parser#info=devDependencies)
-[![Maintainability](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/maintainability)](https://codeclimate.com/github/cmaurer/relative.time.parser/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/491d1c7ac4616c6504c6/test_coverage)](https://codeclimate.com/github/cmaurer/relative.time.parser/test_coverage)
 [![Known Vulnerabilities](https://snyk.io/test/github/cmaurer/relative.time.parser/badge.svg?targetFile=package.json)](https://snyk.io/test/github/cmaurer/relative.time.parser?targetFile=package.json)
 
 ## Install - NPM
