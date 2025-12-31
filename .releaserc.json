@@ -2,8 +2,8 @@
   "branches": [
     "master",
     {
-      "name": "*",
-      "prerelease": "${name.replace(/[^a-zA-Z0-9]/g, '-')}",
+      "name": "feature/*",
+      "prerelease": "${name.replace(/^feature\\//g, '').replace(/[^a-zA-Z0-9]/g, '-')}",
       "channel": "next"
     }
   ],
